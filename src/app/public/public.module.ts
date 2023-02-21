@@ -4,6 +4,8 @@ import { SharedModule } from "../core/shared/shared.module";
 import { PublicRoutingModule } from "./public-routing.module";
 
 //Component
+import { HomeComponent } from "./home/containers/home.component";
+import { SliderComponent } from "./home/components/slider/slider.component";
 import { PublicComponent } from "./public.component";
 
 @NgModule({
@@ -12,9 +14,12 @@ import { PublicComponent } from "./public.component";
         SharedModule
     ],
     declarations: [
-        PublicComponent
+        PublicComponent,
+        HomeComponent,
+        SliderComponent
     ],
-    exports: [],
+    exports: [
+    ],
     providers: []
 })
 
